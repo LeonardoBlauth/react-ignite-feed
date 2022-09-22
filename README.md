@@ -13,7 +13,15 @@ Ignite Feed is a web application to publish, comment and give likes to posts. Th
 
 ## :camera: Screenshots
 
-![Ignite Feed - Interface](https://imgur.com/iBxMevW.png)
+![Ignite Feed - Interface](https://imgur.com/1g7v5oO.png)
+
+<br />
+
+<h1 align="center">
+
+![Ignite Feed - Interface Responsive](https://imgur.com/NxzvoWy.png)
+
+</h1>
 
 <br />
 
