@@ -1,6 +1,7 @@
 import { useState, FormEvent, ChangeEvent, InvalidEvent } from "react";
 import { format, formatDistanceToNow } from "date-fns";
 import ptBR from "date-fns/locale/pt-BR";
+import { v4 as uuidv4 } from 'uuid';
 
 import { Avatar } from "./Avatar";
 import { Comment } from "./Comment";
@@ -24,7 +25,7 @@ interface PostProps {
 }
 
 export function Post({ author, content, publishedAt }: PostProps) {
-  const [comments, setComments] = useState(["Post muito bacana, hein?!"]);
+  const [comments, setComments] = useState([{ id: uuidv4(), content:"Post muito bacana, hein?!"}]);
   const [newCommentText, setNewCommentText] = useState("");
 
   const publishedDateFormatted = format(
@@ -43,7 +44,7 @@ export function Post({ author, content, publishedAt }: PostProps) {
   function handleCreateNewComment(event: FormEvent) {
     event.preventDefault();
 
-    setComments([newCommentText, ...comments]);
+    setComments([{ id: uuidv4(),content: newCommentText }, ...comments]);
     setNewCommentText("");
   }
 
@@ -59,7 +60,7 @@ export function Post({ author, content, publishedAt }: PostProps) {
 
   function deleteComment(commentToDelete: string) {
     const commentsWithoutDeletedOne = comments.filter((comment) => {
-      return comment !== commentToDelete;
+      return comment.content !== commentToDelete;
     });
 
     setComments(commentsWithoutDeletedOne);
@@ -124,8 +125,8 @@ export function Post({ author, content, publishedAt }: PostProps) {
         {comments.map((comment) => {
           return (
             <Comment
-              key={comment}
-              content={comment}
+              key={comment.id}
+              content={comment.content}
               onDeleteComment={deleteComment}
             />
           );
