@@ -1,6 +1,6 @@
 ## 💻 Overview
 
-Ignite Feed is a web application to publish, comment and give likes to posts. This project was developed during **[Rocketseat's Ignite](https://github.com/Rocketseat)** boot camp on React trail, under the guidance of **[Diego Fernandes](https://github.com/diego3g)**.
+Ignite Feed is a web application to publish, comment and give likes in posts. This project was developed during **[Rocketseat's Ignite](https://github.com/Rocketseat)** boot camp on React trail, under the guidance of **[Diego Fernandes](https://github.com/diego3g)**.
 
 ## 🚀 Technologies
 
