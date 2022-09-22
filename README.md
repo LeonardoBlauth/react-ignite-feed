@@ -1,3 +1,13 @@
+<p align="center">
+  <h1 align="center">Ignite Feed | Ignite - Rocketseat :rocket:</h1>
+</p>
+
+<p align="center">
+  <a href="#-Overview">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
+
 ## 💻 Overview
 
 Ignite Feed is a web application to publish, comment and give likes in posts. This project was developed during **[Rocketseat's Ignite](https://github.com/Rocketseat)** boot camp on React trail, under the guidance of **[Diego Fernandes](https://github.com/diego3g)**.
